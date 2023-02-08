@@ -11,6 +11,9 @@ abstract class Cheque
     $this->tipo = $tipo;
   }
 
+  //O uso de métodos abstrato são OBRIGATORIO na classe filha
+  abstract function calcularJuro();
+
   /* public function verValor ()
   {
     return "Valor do cheque " . $this->tipo . " é R$ {$this->valor}<br>";
